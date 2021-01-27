@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A cool thing made with Glitch">
 
-    <title>Welcome to Glitch!</title>
+    <title>Glitch Request Board!</title>
 
     <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
     <!-- import the webpage's stylesheet -->
@@ -20,26 +20,33 @@
   <body>
     <header>
       <h1>
-        A Dream of the Future
+        Main Requests Page
       </h1>
     </header>
 
     <main>
-      <p class="bold">Oh hi,</p>
-      
-      <p>Tell me your hopes and dreams:</p>
-      
-      <form>
-        <input name="dream" aria-label="a new dream" type="text" maxlength="100" placeholder="Dreams!">
-        <button type="submit" id="submit-dream">Submit Dream</button>
-      </form>
-      
-      <section class="dreams">
-        <ul id="dreams"></ul>
-        <button id="clear-dreams">
-          Clear Dreams
-        </button>
-      </section>
+      <div class="top">
+        <div class="top__request-form" id="request-form">
+          <form id="form-r">
+            <label for="employee_name">Employee Name</label>
+            <input type="text" id="employee_name"> 
+            <label for="item">Item</label>
+            <textarea id="item" style="width:300px; height:100px;" placeholder="Place the item name and description here..."></textarea>
+            <label for="link_address">Link to Purchase</label>
+            <input type="text" id="link_address">
+            <label for="when_needed">When is it needed by?</label>
+            <input type="date" id="when_needed">
+            <label for="why_needed">Why is it needed?</label>
+            <textarea id="why_needed" style="width:300px; height:100px;" placeholder="..."></textarea>
+            <label for="category">Category</label>
+            <select id="category">
+              <option value="software">Software License</option>
+              <option value="equipment">Equipment</option>
+              <option value="supplies">Office Supplies</option>
+            </select>
+          </form>
+        </div>
+      </div>
       
     </main>
 
