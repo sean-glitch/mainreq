@@ -1,46 +1,97 @@
 /* styles */
 /* called by your view template */
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+ 
 }
 
 h1 {
   font-style: italic;
   color: #373fff;
+  text-align: center;
 }
 
-.bold {
-  font-weight: bold;
+.main-grid {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 360px 5fr;
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+  grid-auto-rows: minmax(20px, auto);
+  margin: auto;
+  grid-gap: 3px;
+  width: 95vw;
+  height: auto;
+  
 }
 
-p {
-  max-width: 600px;
+.left__request-form {
+  overflow: hidden;
+  
+}
+
+.right__tracking-area {
+  display: grid;
+  padding: 0px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-auto-rows: minmax(20px, auto);
+  margin: 0px auto;
+  width: 95%;
+  
+  text-align: center;
+  height: auto;
+}
+
+.right__tracking-area--card {
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  border: solid 4px rgba(79, 55, 255, 1);
+  width: 95%;
+  box-shadow: 10px 10px 10px 1px rgba(79, 55, 255, .8);
+  padding: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2px;
+  grid-row-gap: 10px;
+  grid-auto-rows: minmax(20px, auto);
+  margin: 0px auto;
+}
+
+.right__tracker-area--card--list {
+  grid-column: 1 / 4;
+}
+
+.right__tracker-area--card--list--h2 {
+  height: 65px; 
 }
 
 form {
-  margin-bottom: 25px;
-  padding: 15px;
+  margin-bottom: 0px;
+  padding: 10px;
   background-color: cyan;
   display: inline-block;
-  width: 100%;
+  width: 95%;
   max-width: 340px;
-  border-radius: 3px;
+  border-radius: 10px;
+  
 }
 
 input {
   display: block;
-  margin-bottom: 10px;
+  margin: 5px;
   padding: 5px;
-  width: 100%;
+  width: 95%;
   border: 1px solid lightgrey;
   border-radius: 3px;
   font-size: 16px;
+}
+
+textarea {
+  margin: 5px auto;
+  resize: none;
 }
 
 button {
@@ -48,8 +99,10 @@ button {
   border-radius: 3px;
   background-color: lightgrey;
   border: 1px solid grey;
-  box-shadow: 2px 2px teal;
+  box-shadow: 2px 2px black;
   cursor: pointer;
+  margin: 5px;
+  height: 40px;
 }
 
 button:hover {
@@ -62,10 +115,4 @@ button:active {
 
 li {
   margin-bottom: 5px;
-}
-
-footer {
-  margin-top: 50px;
-  padding-top: 25px;
-  border-top: 1px solid lightgrey;
 }

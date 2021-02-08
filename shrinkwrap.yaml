@@ -1,5 +1,6 @@
 dependencies:
   express: 4.17.1
+  nodemailer: 6.4.17
   sqlite3: 4.1.1
 packages:
   /abbrev/1.1.1:
@@ -660,6 +661,12 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-TwWAOZb0j7e9eGaf9esRx3ZcLaE5tQ2lvYy1pb5IAaG1a2e2Kv5Lms1Y4hpj+ciXJRofIxxlt5haeQ/2ANeE0Q==
+  /nodemailer/6.4.17:
+    dev: false
+    engines:
+      node: '>=6.0.0'
+    resolution:
+      integrity: sha512-89ps+SBGpo0D4Bi5ZrxcrCiRFaMmkCt+gItMXQGzEtZVR3uAD3QAQIDoxTWnx3ky0Dwwy/dhFrQ+6NNGXpw/qQ==
   /nopt/4.0.1:
     dependencies:
       abbrev: 1.1.1
@@ -1128,4 +1135,5 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   express: ^4.17.1
+  nodemailer: ^6.4.17
   sqlite3: ^4.1.1
