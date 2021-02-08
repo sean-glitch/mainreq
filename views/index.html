@@ -25,38 +25,45 @@
     </header>
 
     <main>
-      <div class="top">
-        <div class="top__request-form" id="request-form">
+      <div class="main-grid">
+        <div class="left__request-form" id="request-form">
           <form id="form-r">
             <label for="employee_name">Employee Name</label>
             <input type="text" id="employee_name"> 
             <label for="item">Item</label>
-            <textarea id="item" style="width:300px; height:100px;" placeholder="Place the item name and description here..."></textarea>
+            <textarea id="item" style="width:340px; height:100px;" placeholder="Place the item name and description here..."></textarea>
             <label for="link_address">Link to Purchase</label>
-            <input type="text" id="link_address">
+            <input type="text" id="link_address" placeholder="https://... ">
             <label for="when_needed">When is it needed by?</label>
             <input type="date" id="when_needed">
             <label for="why_needed">Why is it needed?</label>
-            <textarea id="why_needed" style="width:300px; height:100px;" placeholder="..."></textarea>
+            <textarea id="why_needed" style="width:340px; height:100px;" placeholder="..."></textarea>
             <label for="category">Category</label>
             <select id="category">
-              <option value="software">Software License</option>
-              <option value="equipment">Equipment</option>
-              <option value="supplies">Office Supplies</option>
+              <option value="Software">Software License</option>
+              <option value="Equipment">Equipment</option>
+              <option value="Supplies">Office Supplies</option>
             </select>
+            <input type="submit" value="Submit">
+            <p>
+              * If you are having any issues, please DM Sean
+            </p>
           </form>
+        </div>
+        <div class="right__tracking-area" id="tracking-area">
+          
         </div>
       </div>
       
     </main>
 
-    <footer>
-      Made with <a href="https://glitch.com">Glitch</a>!
-    </footer>
-
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    
   </body>
 </html>
